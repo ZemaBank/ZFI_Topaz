@@ -1,6 +1,6 @@
 module M2yTopaz
   class Configuration
-    attr_writer :server_url, :certification, :env
+    attr_writer :server_url, :certification, :proxy, :env
 
     def initialize
       @server_url = nil
