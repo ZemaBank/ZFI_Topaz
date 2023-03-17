@@ -20,7 +20,7 @@ module M2yTopaz
       end
       # puts "Sending POST request to URL: #{url}"
       # puts body
-      HTTParty.post(url, headers: headers, body: body,
+      HTTParty.post(url, headers: headers, body: body.to_json,
                     http_proxyaddr: fixie.host,
                     http_proxyport: fixie.port,
                     http_proxyuser: fixie.user,
